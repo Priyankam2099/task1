@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        .item{
+            background-color: red;
+            font-size: 30px;
+            color:lightpink;
+            display: none;}
+        
+        @media (max-width:300px){
+            #item-1{
+                display: block;
+                background-color: lightgreen;
+            }
+        }
+        @media (min-width:301px) and (max-width:500px){
+            #item-2{
+                display:block;
+                background-color: lightslategray;
+            }
+        }
+        @media (min-width:501px) and (max-width:800px){
+            #item-3{
+                display:block;
+                background-color: lightcoral;
+            }
+        }
+    
+        
+    </style>
+<div class="item" id="item-1">This is HTML page --which starts from 0px ends at 250px</div>
+<div class="item" id="item-2">This is CSS page --which starts from 251px ends at 600px</div>
+<div class="item" id="item-3">This is a BOOSTRAP page--which starts from 601px ends at 900px</div>
+
+    
+</body>
+</html>
